@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Restaurant</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="main-header">
+      <nav class="nav container">
+        <div class="shopping">
+          <a href="#">
+            <img class="nav__logo" src="/images/logo.png" alt="can't show" />
+          </a>
+          <button class="shopping-card-large">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </button>
+        </div>
+
+        <!-- toggler  -->
+        <div class="nav__toggler">
+          <div class="hamburger line-one"></div>
+          <div class="hamburger line-two"></div>
+          <div class="hamburger line-three"></div>
+        </div>
+        <ul class="list nav__list">
+          <li class="nav__item">
+            <button class="btn btn--primary calltoac">Resderve Table</button>
+          </li>
+          <li class="nav__item">
+            <a href="#"> Conect Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#"> Blog </a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Reviews</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="#"> About Us</a>
+          </li>
+        </ul>
+        <div class="nav__btn">
+          <button class="shopping-card">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="cart-item">0</span>
+          </button>
+          <button class="btn btn--primary calltoac">Resderve Table</button>
+        </div>
+      </nav>
+      <!-- modal -->
+      <section class="cart-center container">
+        <div class="backdrop"></div>
+        <div class="cart">
+          <h3 class="cart-title">Your Cart</h3>
+          <div class="cart-content">
+            <!-- cart contents -->
+          </div>
+          <div class="cart-footer">
+            <span class="cart-total-price"></span>
+            <button class="btn btn--primary confirm-cart">Confirm</button>
+            <button class="btn btn--secondary clear-cart">Clear cart</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- feature start section -->
+    <section class="feature container">
+      <div class="feature__img">
+        <img src="/images/mainstart.png" alt="can't show" />
+      </div>
+      <div class="feature__detail">
+        <h1 class="feature__title">We Serve The Test You Love</h1>
+        <p class="feature__text">
+          This is a type of restaurant which typically serves food and drinks, in addition to light refreshments such as baked goods or snacks. The term comes from the rench word meaning food.
+        </p>
+        <button class="btn btn--primary">Explore Food</button>
+        <button class="btn btn--secondary"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+      </div>
+    </section>
+
+    <!--------------- image slider swiper ------------>
+    <section class="slider container">
+      <div class="myswiper-container-1">
+        <div class="slider-header">
+          <h2>Popular Dishes</h2>
+          <div class="header-btns">
+            <button class="swiper-btn-pre">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="swiper-btn-next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="swiper" id="mySwiper">
+          <div class="swiper-wrapper">
+            <!-- product  -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- multiple service about us -->
+    <section class="service container">
+      <div class="service__img">
+        <img src="/images/mainchef.png" alt="can't show" />
+      </div>
+      <div class="service__detail">
+        <h1 class="service__title">We are more than multiple service</h1>
+        <p class="service__text">
+          This is a type of restaurant which typically serves food and drinks, in addition to light refreshments such as baked goods or snacks. The term comes from the rench word meaning food.
+        </p>
+        <div class="service__items">
+          <div class="services one">
+            <div class="service__item">
+              <img class="serv-image" src="/images/start.png" alt="can't show" />
+              <span>Online Order</span>
+            </div>
+            <div class="service__item">
+              <img class="serv-image" src="/images/start.png" alt="can't show" />
+              <span>24/7 Service</span>
+            </div>
+            <div class="service__item">
+              <img class="serv-image" src="/images/start.png" alt="can't show" />
+              <span>Clean Kitchen</span>
+            </div>
+          </div>
+          <div class="services two">
+            <div class="service__item">
+              <img class="serv-image" src="/images/start.png" alt="can't show" />
+              <span>Pre-Reservation</span>
+            </div>
+            <div class="service__item">
+              <img class="serv-image" src="/images/start.png" alt="can't show" />
+              <span>Oraganized Foodle Place</span>
+            </div>
+            <div class="service__item">
+              <img class="serv-image" src="/images/start.png" alt="can't show" />
+              <span>Super Chefs</span>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn--primary">About US</button>
+      </div>
+    </section>
+    <!-- regular menu -->
+    <section class="menu container">
+      <div class="menu__header">
+        <h2>Our Regular Menu Pack</h2>
+        <div class="menu__dropdown">
+          <select class="btn btn--secondary select-btn">
+            <option value="moreitem">More Item</option>
+            <option value="special">Special</option>
+            <option value="maxican">Maxican</option>
+            <option value="italian">Italian</option>
+            <option value="japanese">Japanese</option>
+            <option value="drinks">Drinks</option>
+            <option value="lunch">Lunch</option>
+          </select>
+        </div>
+        <ul class="menu__item">
+          <li class="btn btn--secondary menu-btn">Special Foods</li>
+          <li class="btn btn--secondary menu-btn">Maxican</li>
+          <li class="btn btn--secondary menu-btn">Italian</li>
+          <li class="btn btn--secondary menu-btn">Japanese</li>
+          <li class="btn btn--secondary menu-btn">Drinks</li>
+          <li class="btn btn--secondary menu-btn">Lunch</li>
+          <li class="btn btn--secondary menu-btn">More Item</li>
+        </ul>
+      </div>
+      <div class="menu__list">
+        <!-- product  -->
+      </div>
+    </section>
+    <!--  make reservation -->
+    <section class="reservation container">
+      <div class="reservation__img">
+        <img src="/images/pasta.png" alt="can't show" />
+      </div>
+      <div class="reservation__detail">
+        <h1 class="reservation__title">Do You Have Any Dinner Plan Today? Reserve Your Table</h1>
+        <p class="reservation__text">Make online reservations, read restaurant reviews from dinner, and earn point towards free meals.OpenTable is real-time online reservation.</p>
+        <button class="btn btn--primary">Make Reservation</button>
+      </div>
+    </section>
+    <!-- customer says -->
+    <section class="slider container">
+      <div class="swiper-container">
+        <div class="slider-header">
+          <h2>Popular Dishes</h2>
+          <div class="header-btns">
+            <button class="swiper-btn-pre-2">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="swiper-btn-next-2">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="swiper" id="mySwiper2">
+          <div class="swiper-wrapper comment">
+            <!-- customer say  -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- chef section -->
+    <section class="slider container">
+      <div class="swiper-container">
+        <div class="slider-header">
+          <h2>Meet Our Chef</h2>
+          <div class="header-btns">
+            <button class="swiper-btn-pre-3">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="swiper-btn-next-3">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="swiper" id="mySwiper3">
+          <div class="swiper-wrapper chef">
+            <!-- chef 1-->
+            <!-- <div class="swiper-slide">
+              <div class="slider-card chef-slide">
+                <div class="chef__image">
+                  <img src="/images/chef1.png" alt="can't show" />
+                </div>
+                <p>Savannah Nguyen</p>
+              </div>
+            </div> -->
+            <!-- chef 2-->
+            <!-- <div class="swiper-slide">
+              <div class="slider-card chef-slide">
+                <div class="chef__image">
+                  <img src="/images/chef6.png" alt="can't show" />
+                </div>
+                <p>Savannah Nguyen</p>
+              </div>
+            </div> -->
+            <!-- chef 3-->
+            <!-- <div class="swiper-slide">
+              <div class="slider-card chef-slide">
+                <div class="chef__image">
+                  <img src="/images/chef7.png" alt="can't show" />
+                </div>
+                <p>Savannah Nguyen</p>
+              </div>
+            </div> -->
+            <!-- chef 4-->
+            <!-- <div class="swiper-slide">
+              <div class="slider-card chef-slide">
+                <div class="chef__image">
+                  <img src="/images/chef8.png" alt="can't show" />
+                </div>
+                <p>Savannah Nguyen</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- download app section -->
+    <section class="download container">
+      <div class="download__section">
+        <div class="download__img">
+          <img src="/images/mobile.png" alt="can't show" />
+        </div>
+        <div class="download__detail">
+          <h1 class="download__title">Never Feel Hungry! Download Our Mobile App Enjoy Delicious Foods</h1>
+          <p class="download__text">Make online reservation, read restaurant reviews from dinners, and earn points towards free meals. OpenTable is real-time online reservation.</p>
+          <button class="btn btn--primary">
+            <div class="button-details">
+              <i class="fa-brands fa-apple"></i>
+              <div class="btn-titles">
+                <p class="btn-title">Download on the</p>
+                <p class="btn-text">Apple Store</p>
+              </div>
+            </div>
+          </button>
+          <button class="btn btn--secondary">
+            <div class="button-details">
+              <i class="fa-brands fa-google-play"></i>
+              <div class="btn-titles">
+                <p class="btn-title">Get it from</p>
+                <p class="btn-text">Google Play</p>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <div class="hr container">
+      <div class="hr__details">
+        <img src="images/logo.png" alt="can't show" />
+        <span class="hr__title">Bites</span>
+      </div>
+
+      <hr class="hr-line" />
+    </div>
+    <footer class="footer container">
+      <div class="footer__details">
+        <ul class="footer__items">
+          <p>Help</p>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+        <ul class="footer__items">
+          <p>About</p>
+          <li>
+            <a href="#">Our Story</a>
+          </li>
+          <li>
+            <a href="#">Benifits</a>
+          </li>
+          <li>
+            <a href="#">Career</a>
+          </li>
+          <li>
+            <a href="#">Our Chefs</a>
+          </li>
+        </ul>
+        <ul class="footer__items">
+          <p>Quick Links</p>
+          <li>
+            <a href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">Reviews</a>
+          </li>
+          <li>
+            <a href="#">Blogs</a>
+          </li>
+          <li>
+            <a href="#">Reserve Table</a>
+          </li>
+          <li>
+            <a href="#">Order Foods</a>
+          </li>
+        </ul>
+        <ul class="footer__items">
+          <p>Service</p>
+          <li>
+            <a href="#">Online Order</a>
+          </li>
+          <li>
+            <a href="#">Pre-Reservation</a>
+          </li>
+          <li>
+            <a href="#">24/7Services</a>
+          </li>
+          <li>
+            <a href="#">Foodie Place</a>
+          </li>
+          <li>
+            <a href="#">Super Chefs</a>
+          </li>
+        </ul>
+        <!-- subscribe -->
+        <div class="subscribe">
+          <p class="subscribe__title">Subscribe Our Newsletter</p>
+          <div class="subscribe__details">
+            <form class="subscribe-input">
+              <label for="email">
+                <input type="email" id="email" placeholder="Enter Your Email" class="sub-email" />
+              </label>
+              <button type="submit" class="sub-btn"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="subscribe-icons">
+              <button class="sub-icons">
+                <i class="fa-brands fa-facebook-f"> </i>
+              </button>
+              <button class="sub-icons">
+                <i class="fa-brands fa-twitter"></i>
+              </button>
+              <button class="sub-icons">
+                <i class="fa-brands fa-instagram"></i>
+              </button>
+              <button class="sub-icons">
+                <i class="fa-brands fa-youtube"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      const swiperOne = new Swiper('#mySwiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        breakpoints: {
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-btn-next',
+          prevEl: '.swiper-btn-pre',
+        },
+      });
+      const swiperTwo = new Swiper('#mySwiper2', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: -10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-btn-next-2',
+          prevEl: '.swiper-btn-pre-2',
+        },
+      });
+      const swiperThree = new Swiper('#mySwiper3', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        breakpoints: {
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-btn-next-3',
+          prevEl: '.swiper-btn-pre-3',
+        },
+      });
+    </script>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
