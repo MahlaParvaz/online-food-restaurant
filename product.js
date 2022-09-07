@@ -47,6 +47,7 @@ export const productData = [
 export const menuData = [
   {
     id: 7,
+    class: 'specialfoods',
     image: '/images/pasta.png',
     name: 'Pasta',
     description: 'Pasta is a type of food typically made from an unleavened dough.',
@@ -54,6 +55,7 @@ export const menuData = [
   },
   {
     id: 8,
+    class: 'japanese',
     image: '/images/sushiplate.png',
     name: 'Shushi Plate',
     description: 'Shushi is a type of food typically made from an unleavened dough.',
@@ -61,6 +63,7 @@ export const menuData = [
   },
   {
     id: 9,
+    class: 'lunch',
     image: '/images/chicken.png',
     name: 'Fried Chicken',
     description: 'Chicken is a type of food typically made from an unleavened dough.',
@@ -68,6 +71,7 @@ export const menuData = [
   },
   {
     id: 10,
+    class: 'lunch',
     image: '/images/mushroom.png',
     name: 'Chicken',
     description: 'Chicken is a type of food typically made from an unleavened dough.',
@@ -75,6 +79,7 @@ export const menuData = [
   },
   {
     id: 11,
+    class: 'japanese',
     image: '/images/chicken&dumpling.png',
     name: 'Chicken Dumpling',
     description: 'Dumpling is a  food typically made from an unleavened dough.',
@@ -82,6 +87,7 @@ export const menuData = [
   },
   {
     id: 12,
+    class: 'maxican',
     image: '/images/chickensandwich.png',
     name: 'Chicken Fillet',
     description: 'Fillet is a type of food typically made from an unleavened dough.',
@@ -89,6 +95,7 @@ export const menuData = [
   },
   {
     id: 13,
+    class: 'italian',
     image: '/images/pancake.png',
     name: 'Pancake',
     description: 'Pancake is a type of food typically made from an unleavened dough.',
@@ -96,6 +103,7 @@ export const menuData = [
   },
   {
     id: 14,
+    class: 'japanese',
     image: '/images/noodle.png',
     name: 'Noodle',
     description: 'Noodle is a type of food typically made from an unleavened dough.',

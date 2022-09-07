@@ -26,7 +26,10 @@ const shoppingLargeBtn = document.querySelector('.shopping-card-large');
 const cartModal = document.querySelector('.cart');
 const backDrop = document.querySelector('.backdrop');
 const closeModal = document.querySelector('.confirm-cart');
-//
+//regular menu
+const menuItem = document.querySelectorAll('.menu__item');
+const menuDropDownBtns = document.querySelectorAll('.select-btn');
+const menuBtn = document.querySelectorAll('.menu-btn');
 
 let buttonsDOM = [];
 let cart = [];
@@ -97,7 +100,7 @@ function displayRegularMenu(products) {
   let result = '';
   products.forEach((product) => {
     result += `
-    <div class="slider-card">
+    <div class="slider-card ${product.class} " >
     <div class="slider-image">
       <img class="img-slide" src=${product.image} alt="#" />
     </div>
@@ -337,4 +340,50 @@ document.addEventListener('DOMContentLoaded', () => {
   saveToStorage(products, menuProducts, commentDataProducts, chefDatas);
   getAddToCartBtn();
   modalCartLogic();
+  filterBtn();
+  // filter
 });
+
+// filter product active btn
+// filter by btns
+function filterBtn() {
+  menuBtn.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      const productsFilter = [...document.querySelectorAll('.slider-card')];
+      const filter = e.target.dataset.filter;
+
+      productsFilter.forEach((product) => {
+        if (filter === 'all') {
+          product.style.display = 'block';
+        } else if (product.classList.contains(filter)) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // menu dropdown btn
+  menuDropDownBtns.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      const productsFilter = [...document.querySelectorAll('.slider-card')];
+      const filter = e.target.value;
+      productsFilter.forEach((product) => {
+        if (filter === 'all') {
+          product.style.display = 'block';
+        } else if (product.classList.contains(filter)) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+//active btn style
+function resetActiveBtn() {
+  menuBtn.forEach((btn) => {
+    btn.classList.remove('active-btn');
+  });
+}

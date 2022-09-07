@@ -817,7 +817,12 @@ h2 {
     cursor: pointer;
     margin-left: 1rem;
   }
-
+  .active-btn {
+    border: 2px solid var(--color-white);
+    background-color: var(--primaryColor);
+    color: var(--color-white);
+    box-shadow: 1px 7px 15px rgb(226, 220, 220);
+  }
   .menu-btn:hover {
     border: 2px solid var(--color-white);
     background-color: var(--primaryColor);

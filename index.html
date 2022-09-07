@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="/style.css" />
     <title>Restaurant</title>
   </head>
@@ -162,8 +162,8 @@
         <h2>Our Regular Menu Pack</h2>
         <div class="menu__dropdown">
           <select class="btn btn--secondary select-btn">
-            <option value="moreitem">More Item</option>
-            <option value="special">Special</option>
+            <option value="all">More Item</option>
+            <option value="specialfoods">Special</option>
             <option value="maxican">Maxican</option>
             <option value="italian">Italian</option>
             <option value="japanese">Japanese</option>
@@ -171,17 +171,17 @@
             <option value="lunch">Lunch</option>
           </select>
         </div>
-        <ul class="menu__item">
-          <li class="btn btn--secondary menu-btn">Special Foods</li>
-          <li class="btn btn--secondary menu-btn">Maxican</li>
-          <li class="btn btn--secondary menu-btn">Italian</li>
-          <li class="btn btn--secondary menu-btn">Japanese</li>
-          <li class="btn btn--secondary menu-btn">Drinks</li>
-          <li class="btn btn--secondary menu-btn">Lunch</li>
-          <li class="btn btn--secondary menu-btn">More Item</li>
-        </ul>
+        <div class="menu__item">
+          <a class="btn btn--secondary menu-btn" data-filter="specialfoods">Special Foods</a>
+          <a class="btn btn--secondary menu-btn" data-filter="maxican">Maxican</a>
+          <a class="btn btn--secondary menu-btn" data-filter="italian">Italian</a>
+          <a class="btn btn--secondary menu-btn" data-filter="japanese">Japanese</a>
+          <a class="btn btn--secondary menu-btn" data-filter="drinks">Drinks</a>
+          <a class="btn btn--secondary menu-btn" data-filter="lunch">Lunch</a>
+          <a class="btn btn--secondary menu-btn" data-filter="all">More Item</a>
+        </div>
       </div>
-      <div class="menu__list">
+      <div class="menu__list" id="store-products">
         <!-- product  -->
       </div>
     </section>
@@ -233,42 +233,7 @@
         </div>
         <div class="swiper" id="mySwiper3">
           <div class="swiper-wrapper chef">
-            <!-- chef 1-->
-            <!-- <div class="swiper-slide">
-              <div class="slider-card chef-slide">
-                <div class="chef__image">
-                  <img src="/images/chef1.png" alt="can't show" />
-                </div>
-                <p>Savannah Nguyen</p>
-              </div>
-            </div> -->
-            <!-- chef 2-->
-            <!-- <div class="swiper-slide">
-              <div class="slider-card chef-slide">
-                <div class="chef__image">
-                  <img src="/images/chef6.png" alt="can't show" />
-                </div>
-                <p>Savannah Nguyen</p>
-              </div>
-            </div> -->
-            <!-- chef 3-->
-            <!-- <div class="swiper-slide">
-              <div class="slider-card chef-slide">
-                <div class="chef__image">
-                  <img src="/images/chef7.png" alt="can't show" />
-                </div>
-                <p>Savannah Nguyen</p>
-              </div>
-            </div> -->
-            <!-- chef 4-->
-            <!-- <div class="swiper-slide">
-              <div class="slider-card chef-slide">
-                <div class="chef__image">
-                  <img src="/images/chef8.png" alt="can't show" />
-                </div>
-                <p>Savannah Nguyen</p>
-              </div>
-            </div> -->
+            <!-- chef cart details  -->
           </div>
         </div>
       </div>
@@ -486,6 +451,8 @@
         },
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src="app.js" type="module"></script>
   </body>
 </html>
